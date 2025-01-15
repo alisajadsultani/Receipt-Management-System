@@ -1,0 +1,11 @@
+The receipt system used the principles of object-oriented programming to ensure modularity, maintainability, and scalability.
+The key components of the system include the Customer, Item, Payment, Receipt, and Store classes, which encapsulate different
+attributes and behaviors. Polymorphism was exercised in the Payment class, through the subclasses CashPayment and CardPayment,
+which allows different payment methods to be dealt with flexibly. Encapsulation ensures the integrity of the data, where methods such as addReceipt
+and addItem safely manage the association of receipts, customers, and stores. The receipts will be categorized according to the
+store types (electronics, grocery, etc.) in order to facilitate the spending analysis, while tax calculations will be integrated into the
+Receipt class with a configurable tax rate. Error handling mechanisms are included to validate inputs, such as restricting cases where a
+particular customer or store has already been added; other validations are applied by ensuring item prices and quantities are valid numeric inputs.
+Reports are designed to summarize various overall spending categorized by either store or customer based on a clear relationship among classes.
+The program presents a friendly user interface to compile receipts, view them categorized by customer or store, and generate detailed reports.
+This is a comprehensive, efficient design of a receipt management system.
